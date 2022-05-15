@@ -38,4 +38,6 @@ def escolhendo(num, e):
 
     return n, t
 
-print(f'\nO Computador 2 levou {escolhendo(num, e)[1]} tentativas até acertar o número {e}.')
+a= escolhendo(num, e)
+
+print(f'\nO Computador 2 levou {a[1]} tentativas até acertar o número {a[0]}.')
