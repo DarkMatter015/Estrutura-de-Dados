@@ -12,13 +12,13 @@ e= randint(num[0], num[-1])
 print(f'Escolhido: {e}\n')
 
 # Computador 2 tentando adivinhar com método binário
-
 def escolhendo(num, e):
 
     corte= len(num) // 2
     c= num.index(corte)
     t=0
     n= corte
+
     print(f'Tentativa 0: {n}')
 
     while n != e:
@@ -29,7 +29,7 @@ def escolhendo(num, e):
         if n < e:
             num= num[c+1:]
             print(f'{num} \n')
-
+        # Pegar número da metade
         corte= num[-1] - len(num) // 2
         c= num.index(corte)
         n=corte
